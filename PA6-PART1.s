@@ -21,7 +21,7 @@
 	mov r0,#1 
 	ldr r1,=getInputSize
 swi 0x69 
-//SOFTWARE INTERRUPTION
+	//SOFTWARE INTERRUPTION
 	ldr r0,=IntRead               
 	ldr r0,[r0]                                      
 	swi 0x6c
